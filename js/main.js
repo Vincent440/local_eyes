@@ -8,16 +8,6 @@ var direction = "";
 var newRow = "";
 var endRow = "";
 
-var config = {
-    apiKey: "AIzaSyB8QUFbKw8DxQ5Hcj17exFgjy_gcXGjPXk",
-    authDomain: "localeyes-54238.firebaseapp.com",
-    databaseURL: "https://localeyes-54238.firebaseio.com",
-    projectId: "localeyes-54238",
-    storageBucket: "localeyes-54238.appspot.com",
-    messagingSenderId: "35407995613"
-};
-firebase.initializeApp(config);
-
 function weather(zip) {
     // openweathermap.org api (60 free calls per minute)
     var apiKey = "4245352a3814173935fcebaa7e744e45";
@@ -58,7 +48,7 @@ function weather(zip) {
 
 function zipSearch(zip) {
     // zipcodedownload.com api key (500 free call per month)
-    var apiKey = "81140481924a4c8b874bf17fe3c6fec0";
+    var apiKey = "9d0b3a26a59c457bbc6edd363f5bdbc1";
     var queryURL = "https://zipcodedownload.com:5430/Filter?format=json&citytype=d&cityname=&postalcode=" + zip + "&country=us5&key=" + apiKey;
 
     $.ajax({
