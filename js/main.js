@@ -19,7 +19,7 @@ function weather(zip) {
     }).then(function (response) {
         if (response.cod == 200) {
             $("#weather_info").removeClass("d-none");
-            $("#weather_card").append("<div id='w'_icon'><img src='http://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png' alt='Current Conditions'><span class='pl-4'>" + response.list[0].weather[0].main + "</span></div>");
+            $("#weather_card").append("<div id='w'_icon'><img src='https://openweathermap.org/img/w/" + response.list[0].weather[0].icon + ".png' alt='Current Conditions'><span class='pl-4'>" + response.list[0].weather[0].main + "</span></div>");
             $("#weather_card").append("<p><b>Temperature: </b>" + Math.round(response.list[0].main.temp) + "&deg;</p>");
             $("#weather_card").append("<p><b>Humidity: </b>" + response.list[0].main.humidity + "</p>");
             var dir = response.list[0].wind.deg;
