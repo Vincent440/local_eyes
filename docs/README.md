@@ -1,6 +1,6 @@
 # :eyes:  LocalEyes   :eyes:
 
-![LocalEyes Logo](images/localeyeslogo.png)
+![LocalEyes Logo](../assets/images/localeyeslogo.png)
 
 
 
