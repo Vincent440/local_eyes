@@ -17,26 +17,26 @@ function yelpZipBuild (zipData) {
     }
     $('#yelp_card').append("<p><a href='" + bdata.url + "' target='_blank'><img src='images/Yelp_burst_positive_RGB.png' alt='Yelp' width='33px' height='36px' class='mr-2'>" + bdata.name + '</a> - ' + price + '</p>')
     $('#yelp_card').append('<p>' + bdata.display_phone + '</p>')
-    if (bdata.rating == 0) {
-      imgText = 'images/small_0.png'
-    } else if (bdata.rating == 1) {
-      imgText = 'images/small_1.png'
-    } else if (bdata.rating == 1.5) {
-      imgText = 'images/small_1_half.png'
-    } else if (bdata.rating == 2) {
-      imgText = 'images/small_2.png'
-    } else if (bdata.rating == 2.5) {
-      imgText = 'images/small_2_half.png'
-    } else if (bdata.rating == 3) {
-      imgText = 'images/small_3.png'
-    } else if (bdata.rating == 3.5) {
-      imgText = 'images/small_3_half.png'
-    } else if (bdata.rating == 4) {
-      imgText = 'images/small_4.png'
-    } else if (bdata.rating == 4.5) {
-      imgText = 'images/small_4_half.png'
-    } else if (bdata.rating == 5) {
-      imgText = 'images/small_5.png'
+    if (bdata.rating === 0) {
+      imgText = 'assets/images/small_0.png'
+    } else if (bdata.rating === 1) {
+      imgText = 'assets/images/small_1.png'
+    } else if (bdata.rating === 1.5) {
+      imgText = 'assets/images/small_1_half.png'
+    } else if (bdata.rating === 2) {
+      imgText = 'assets/images/small_2.png'
+    } else if (bdata.rating === 2.5) {
+      imgText = 'assets/images/small_2_half.png'
+    } else if (bdata.rating === 3) {
+      imgText = 'assets/images/small_3.png'
+    } else if (bdata.rating === 3.5) {
+      imgText = 'assets/images/small_3_half.png'
+    } else if (bdata.rating === 4) {
+      imgText = 'assets/images/small_4.png'
+    } else if (bdata.rating === 4.5) {
+      imgText = 'assets/images/small_4_half.png'
+    } else if (bdata.rating === 5) {
+      imgText = 'assets/images/small_5.png'
     }
     $('#yelp_card').append("<p class='small'><img src='" + imgText + "' alt='" + bdata.review_count + "' class='mr-2'>" + bdata.review_count + ' reviews</p>')
     $('#yelp_card').append('<hr />')
