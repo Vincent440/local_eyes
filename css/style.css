@@ -36,9 +36,6 @@ body {
     width: 200px;
     margin: auto;
   }
-}
-
-@media (max-width: 640px) {
   .mr-auto {
     width: 100%;
   }
